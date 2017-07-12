@@ -31,16 +31,17 @@
    
     这一步成功后会在dao,entity，mapping包出现对应数据库的表的xxxMapper.java,xxx.java,xxxMapper.xml。
   
-####3.至此环境已基本OK，可以开始专心编写自己的业务代码了。
+3.至此环境已基本OK，可以开始专心编写自己的业务代码了。
 
-####4.项目结构。
+4.项目结构。
 
 ![](https://github.com/drawthink/base-web/blob/master/img/tree.png?raw=true)
 
-#####4.1common包封装了
+4.1common包封装了
     exception   自定义异常。
     logger      打印日志文件封装
     utils       相关工具类
+    
 4.2 在com.drawthink.controller.TestController中有简单的例子。
 
 注：项目以后还会陆续完善，如有错误的地方，望大家指正。
