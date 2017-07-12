@@ -7,18 +7,18 @@ package com.drawthink.common.exception;
  */
 public interface ErrorCode {
 
-	static String NETWORK_ERROR_CODE = "0001";
-	static String NETWORK_ERROR_MSG = "网络错误...";
+	  String NETWORK_ERROR_CODE = "0001";
+	  String NETWORK_ERROR_MSG = "网络错误...";
 
-	static String DATA_ERROR_CODE = "0002";
-	static String DATA_ERROR_MSG = "数据加载失败...";
+	  String DATA_ERROR_CODE = "0002";
+	  String DATA_ERROR_MSG = "数据加载失败...";
 
-	static String LOGIN_UNAME_ERROR_CODE = "0003";
-	static String LOGIN_UNAME_ERROR_MSG = "用户不存在...";
+	  String LOGIN_UNAME_ERROR_CODE = "0003";
+	  String LOGIN_UNAME_ERROR_MSG = "用户不存在...";
 
-	static String LOGIN_PD_ERROR_CODE = "0003";
-	static String LOGIN_PD_ERROR_MSG = "密码错误...";
+	  String LOGIN_PD_ERROR_CODE = "0004";
+	  String LOGIN_PD_ERROR_MSG = "密码错误...";
 	
-	static String UNDEFINED_ERROR_MSG = "未知错误...";
+	  String UNDEFINED_ERROR_MSG = "未知错误...";
 
 }
