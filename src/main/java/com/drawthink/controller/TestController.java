@@ -4,7 +4,6 @@ import com.drawthink.common.exception.BusinessException;
 import com.drawthink.common.exception.ErrorCode;
 import com.drawthink.entity.Student;
 import com.drawthink.services.StudentService;
-import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**   
@@ -48,7 +45,6 @@ public class TestController {
 	@RequestMapping(value="/getall",method = RequestMethod.GET,produces = "text/json;charset=UTF-8")
 	@ResponseBody
 	protected ModelAndView queryAll() throws Exception {
-//		String res = new Gson().toJson().toString();
 		List<Student> list = stuService.queryAllStudent();
 		return new ModelAndView("test", "list", list);
 	}
